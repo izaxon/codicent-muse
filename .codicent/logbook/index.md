@@ -11,3 +11,4 @@ updates this index in the same change (see `../CONTRACT.md`).
 
 - [2026-10-29 — Adopt Codicent memory](2026-10-29-adopt-codicent-memory.md) — #decision — why this repo chose file-first memory.
 - [2026-10-29 — Kit v0.1](2026-10-29-kit-v0-1.md) — #release — installer, contract, templates, docs site.
+- [2026-10-29 — Smoke2 acceptance pass](2026-10-29-smoke2-acceptance-pass.md) — #log — fresh-session acceptance verified in sibling repo.

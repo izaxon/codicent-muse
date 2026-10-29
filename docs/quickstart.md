@@ -10,7 +10,7 @@ From your repo:
 sh path/to/codicent-muse/install.sh
 ```
 
-Windows:
+Windows (run from PowerShell — `cmd.exe` silently ignores `.ps1` files):
 
 ```powershell
 ..\codicent-muse\install.ps1
