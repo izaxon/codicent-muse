@@ -39,7 +39,5 @@ repos, ideas, and projects — first-class for Muse Code users.
 
 ## Known gaps (judges welcome to poke)
 
-- CLI/server sync commands unverified this session (sandbox down, no page
-  fetch); `docs/cli.md` is a checklist, not commands. File-first core is
-  unaffected — it needs zero CLI.
+- CLI install + commands verified via docs fetch (`docs/cli.md`); live `logbook` runs and `.codicent/` store convergence still ahead. File-first core needs zero CLI.
 - Multi-agent adapters beyond Muse Code are documented, not yet test-run.

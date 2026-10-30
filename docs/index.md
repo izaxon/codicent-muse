@@ -1,3 +1,8 @@
+---
+layout: page
+title: Codicent memory for coding repos
+---
+
 # Codicent memory for coding repos
 
 Every coding repo gets **one logbook**: plain Markdown, in git, next to the
@@ -7,7 +12,7 @@ same files. No vendor schema, no lock-in, no lost context.
 - New here? Start with [Quickstart](quickstart.md).
 - Want the rules? Read the [Schema](schema.md).
 - Capturing know-how? See [Tacit knowledge](tacit.md).
-- Running the server/CLI? See [CLI & sync](cli.md) (verification pending).
+- Running the server/CLI? See [CLI & sync](cli.md).
 - Using another agent? See [Agents](agents.md).
 
 ## Why file-first

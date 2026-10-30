@@ -1,3 +1,8 @@
+---
+layout: page
+title: Quickstart
+---
+
 # Quickstart
 
 Add Codicent memory to any repo in about three minutes.

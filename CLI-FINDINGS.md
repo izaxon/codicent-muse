@@ -1,34 +1,35 @@
 # CLI truth findings (Step 1)
 
-Date: 2026-10-29. Status: **PARTIAL — snippet-level only, full inspection pending.**
+Date: 2026-10-30. Status: **VERIFIED via direct fetch.**
 
-## What was attempted
+## Method
 
-- Target: `https://logbook.codicent.ai/cli/` (user-provided ref).
-- Available tools this run: file read/search (repo is empty), `web_search`
-  (snippets only, no full-page fetch), PowerShell (**down** — Windows sandbox
-  ACL failure, retries timed out).
-- Result: underlying page content could **not** be inspected.
-  **No CLI flag is verified.**
+HTTPS fetches with response bodies read in full (this session, network up):
 
-## Snippet-level signals (not decision evidence)
+- `https://logbook.codicent.ai/cli/` (200, full text extracted, tags stripped)
+- `https://raw.githubusercontent.com/izaxon/codicent-logbook/main/README.md`
+  (200; `master` returns identical content)
+- `https://api.github.com/repos/izaxon/codicent-logbook` (200, repo metadata)
 
-- Runtime repo: `https://github.com/izaxon/codicent-logbook` — described as a
-  "standalone, zero-dependency logbook runtime", single self-contained binary;
-  per-platform `logbook-server-*` binaries under Releases; source synced from
-  the Codicent monorepo `codicent-logbook/` project.
-- Install hint seen in snippet:
-  `iwr https://logbook.codicent.ai/install.ps1 | iex`, then `logbook-server`.
-- Docs site: `https://logbook.codicent.ai/`
+Earlier snippet-only status (2026-10-29, shell down) is superseded.
 
-## Decision (per plan branch)
+## Verified facts (see `docs/cli.md` for detail)
 
-Markdown-primary file convention is the source of truth; CLI/server sync is an
-optional adapter. **No kit file references an unverified CLI flag** —
-`docs/cli.md` lists verification steps instead of commands.
+- `logbook` CLI: single binary, plain Markdown+YAML store, no DB/server;
+  immutable versions; commands init/add/get/list/find/history/status,
+  data* verbs, login/logout/chat; tags via `#markers` or `-t`.
+- Install: `.../cli/install.sh|install.ps1` + `logbook init`
+  (Windows: `%USERPROFILE%\.logbook` + PATH); releases `logbook-v*`
+  (example `logbook-v0.8.0`); manual per-platform binaries.
+- `logbook-server`: SQLite + MCP (stdio/HTTP) + REST/OpenAPI + file inbox +
+  tunnel; `.../install.sh|install.ps1`, MCP at `/mcp` on `:5100`.
+- Three levels (files → local runtime → platform), one data model;
+  post-login CLI writes to a Codicent project; data export/import between
+  instances. Repo hosts site + releases, synced from monorepo (no site PRs).
 
-## To close the gap (one command)
+## Remaining gaps
 
-On a machine with the runtime installed, run
-`logbook-server --help` (and `logbook --help` if a separate CLI exists),
-paste the output, then update `docs/cli.md` with the verified commands.
+- No `logbook` command has been EXECUTED here yet (`--help` output,
+  `init`/`add`/`list` round-trip) — docs-verified only.
+- `.codicent/logbook/` (curated, `YYYY-MM-DD-slug.md`) vs CLI store
+  (`data/entries/...`, timestamped) convergence is undecided by design.

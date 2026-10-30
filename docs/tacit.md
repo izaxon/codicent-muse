@@ -1,3 +1,8 @@
+---
+layout: page
+title: Tacit knowledge
+---
+
 # Tacit knowledge
 
 Explicit knowledge lives in code and docs. Tacit knowledge — *why* the code

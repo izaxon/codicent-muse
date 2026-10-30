@@ -1,3 +1,8 @@
+---
+layout: page
+title: Schema
+---
+
 # Schema (the memory contract)
 
 Source of truth: `template/.codicent/CONTRACT.md` (v0.1). This page
