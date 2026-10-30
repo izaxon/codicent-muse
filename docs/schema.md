@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Schema
+title: "Schema (the memory contract)"
+eyebrow: Schema
 ---
-
-# Schema (the memory contract)
 
 Source of truth: `template/.codicent/CONTRACT.md` (v0.1). This page
 summarizes it for readers; on conflict, the contract wins.
@@ -55,3 +54,5 @@ a shared vocabulary is what makes one logbook work across agents.
 3. Log releases, PRs, and user decisions immediately, same session.
 4. Entries stay agent-agnostic: no session IDs, tool dumps, vendor blocks.
 5. No secrets, tokens, or personal data — the logbook is committed to git.
+
+Next: [Tacit knowledge](tacit.md).

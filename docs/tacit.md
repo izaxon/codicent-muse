@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Tacit knowledge
+title: "Tacit knowledge"
+eyebrow: Tacit
 ---
-
-# Tacit knowledge
 
 Explicit knowledge lives in code and docs. Tacit knowledge — *why* the code
 is this way, what was tried and failed, which constraint is load-bearing —
@@ -50,3 +49,5 @@ per-key burst window. Backoff beyond 3x gains nothing.
 
 `grep -r max_retries src/`; re-check vendor status page quota section.
 ```
+
+Next: [CLI & sync](cli.md).

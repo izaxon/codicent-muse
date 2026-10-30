@@ -1,9 +1,8 @@
 ---
 layout: page
 title: "CLI & sync"
+eyebrow: CLI
 ---
-
-# CLI & sync
 
 Two verified layers, one model: plain Markdown in git. Facts below were read
 directly from the sources listed at the bottom (fetched 2026-10-30); no
@@ -90,3 +89,5 @@ On-disk layout (CLI store): timestamped files under
 - `https://raw.githubusercontent.com/izaxon/codicent-logbook/main/README.md`
   — server features, install, releases, repo scope (site + binaries, synced
   from the Codicent monorepo; no PRs to site files).
+
+Next: [Agents](agents.md).

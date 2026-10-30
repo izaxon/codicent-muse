@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Quickstart
+title: "Quickstart"
+eyebrow: Quickstart
+lead: "Add Codicent memory to any repo in about three minutes. Install, teach your agent, commit. Nothing to sign up for."
 ---
-
-# Quickstart
-
-Add Codicent memory to any repo in about three minutes.
 
 ## 1. Run the installer
 
@@ -46,7 +44,17 @@ git add .codicent AGENTS.md && git commit -m "Adopt Codicent file-first memory"
 Then prompt your agent: *"Read the repo logbook and summarize the latest
 decisions."* That sentence is the whole acceptance test.
 
+## What success looks like
+
+A fresh agent session answers with real entries, dates, and links — e.g.
+*"1 entry. No decisions recorded yet. The logbook bootstraps file-first
+memory: read index.md at session start, record #decision/#tacit/#release
+via templates/."* If it guesses instead of citing files, the snippet isn't
+in its instruction file — re-check step 2.
+
 ## 4. (This kit only) Enable Pages
 
 Settings → Pages → Deploy from branch → `main`, folder `/docs`.
 The site is Jekyll-compatible Markdown; no build step.
+
+Next: [Schema](schema.md).

@@ -1,0 +1,243 @@
+---
+layout: home
+title: Codicent Muse
+description: The shared memory for repos, ideas and projects. One file-first logbook per repo, plain Markdown in git, read by every agent.
+---
+{% assign quickstart = '/quickstart.html' | relative_url %}
+{% assign schema = '/schema.html' | relative_url %}
+{% assign tacit = '/tacit.html' | relative_url %}
+{% assign cli = '/cli.html' | relative_url %}
+{% assign agents = '/agents.html' | relative_url %}
+
+<!-- HERO -->
+<section class="wrap hero">
+  <div class="hero-copy">
+    <span class="hero-badge"><span class="dot dot-gold"></span>Meta Global AI Developer Hackathon</span>
+    <h1><span class="grad">The shared memory</span><br>for repos, ideas and projects.</h1>
+    <p class="hero-lead">Codicent is the memory and mind of an organization. <strong>Codicent Muse brings that memory into the coding repo:</strong> one logbook per repo, plain Markdown, in git, read by every agent. Muse Code today. Codex, Claude and Grok on the same files tomorrow.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="{{ quickstart }}">Try it in two minutes
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#demo">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg>
+        See the 5-minute demo
+      </a>
+    </div>
+    <p class="hero-note">No database, no service, no account. If every AI vendor vanished tomorrow, <code>git clone</code> still hands you the whole history.</p>
+  </div>
+
+  <div class="glass terminal">
+    <div class="terminal-bar"><span></span><span></span><span></span><code>your-repo</code></div>
+<pre><span class="c">$</span> sh ../codicent-muse/install.sh
+<span class="ok">✓</span> .codicent/CONTRACT.md
+<span class="ok">✓</span> .codicent/logbook/index.md
+<span class="ok">✓</span> .codicent/logbook/templates/
+<span class="c">$</span> cat AGENTS.snippet.md &gt;&gt; AGENTS.md
+<span class="c">$</span> git commit -am "Add repo memory"</pre>
+    <div class="terminal-callout">
+      <span class="callout-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M5 17l.8 2 2 .8-2 .8L5 22l-.8-1.4-2-.8 2-.8z"/></svg>
+      </span>
+      <div class="callout-body">
+        <span class="callout-kicker">Any agent, fresh session</span>
+        <span class="callout-text">“Read the repo logbook and summarize the latest decisions.” The agent cites real entries with dates, commits and rationale.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section class="wrap facts" aria-label="At a glance">
+  <div class="fact"><strong>1</strong><span>logbook per repo, next to the code</span></div>
+  <div class="fact"><strong>5</strong><span>rules in the whole schema</span></div>
+  <div class="fact"><strong>15</strong><span>lines to teach any agent</span></div>
+  <div class="fact"><strong>0</strong><span>services, databases or accounts</span></div>
+</section>
+
+<!-- PROBLEM -->
+<section class="wrap section">
+  <div class="section-head">
+    <span class="eyebrow eyebrow-gold">The problem</span>
+    <h2>Every AI session starts from zero. Your repo shouldn't.</h2>
+  </div>
+  <div class="grid grid-3">
+    <div class="glass feature" style="padding: 28px">
+      <span class="feature-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg></span>
+      <h3>You re-explain the same context</h3>
+      <p>Every new agent, every new session: the stack, the constraints, the reason the obvious approach was rejected. Again.</p>
+    </div>
+    <div class="glass feature" style="padding: 28px">
+      <span class="feature-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c4-1 6-3 8-7"/><path d="M12 12c2-4 4-6 8-7"/><circle cx="12" cy="12" r="1.5"/><path d="M6 6l2 2M16 16l2 2"/></svg></span>
+      <h3>Decisions evaporate</h3>
+      <p>The reasoning behind the code lives in someone's head, or in last week's chat. The next agent, even a smarter one, re-decides it.</p>
+    </div>
+    <div class="glass feature" style="padding: 28px">
+      <span class="feature-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 14h3"/><path d="M7 2v4M17 2v4"/><path d="M14 15l2 2 3-3"/></svg></span>
+      <h3>Memory gets locked in</h3>
+      <p>What one tool remembers sits in that tool's schema. Switch agents and the history is gone, or unreadable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="wrap section">
+  <div class="section-head-row">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-gold">How it works</span>
+      <h2>Three steps. Then every agent reads the same files.</h2>
+    </div>
+    <a class="text-link" href="{{ quickstart }}">Full quickstart
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="grid grid-3">
+    <div class="card step">
+      <span class="step-no">01 · INSTALL</span>
+      <h3>Run the installer</h3>
+      <p>Idempotent. Re-running never overwrites existing entries or the contract.</p>
+<pre class="code-block">sh path/to/codicent-muse/install.sh
+<span class="c"># Windows: .\install.ps1</span></pre>
+    </div>
+    <div class="card step">
+      <span class="step-no">02 · TEACH</span>
+      <h3>Add the agent snippet</h3>
+      <p>Fifteen lines in AGENTS.md or CLAUDE.md: where memory lives, read before acting, write after.</p>
+<pre class="code-block">cat template/AGENTS.snippet.md \
+  &gt;&gt; AGENTS.md</pre>
+    </div>
+    <div class="card step">
+      <span class="step-no">03 · USE</span>
+      <h3>Commit and ask</h3>
+      <p>The agent reads the logbook at session start and appends an entry after it acts. Same diff, same review.</p>
+<pre class="code-block" style="white-space: pre-wrap"><span class="c">›</span> Read the repo logbook and
+  summarize the latest decisions.</pre>
+    </div>
+  </div>
+  <div class="grid grid-2">
+    <div class="glass rules" style="padding: 28px">
+      <span class="eyebrow eyebrow-muted">The whole schema</span>
+      <ol>
+        <li>Entries are dated Markdown files with frontmatter and tags.</li>
+        <li>An index lists them chronologically, newest last.</li>
+        <li>Every entry links the commits, PRs and dates it concerns.</li>
+        <li>Agents read the logbook at session start.</li>
+        <li>Agents write an entry after they act.</li>
+      </ol>
+      <a href="{{ schema }}">Read the schema</a>
+    </div>
+<pre class="code-block tree"><span class="dir">.codicent/</span>
+├── CONTRACT.md              <span class="c"># the memory contract</span>
+└── <span class="dir">logbook/</span>
+    ├── index.md             <span class="c"># chronological, newest last</span>
+    ├── 2026-10-29-why-x.md  <span class="c"># one file per entry</span>
+    └── templates/           <span class="c"># decision · tacit · release</span></pre>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="wrap section">
+  <div class="section-head">
+    <span class="eyebrow eyebrow-gold">What you get</span>
+    <h2>Memory that outlives the session, the tool and the vendor.</h2>
+  </div>
+  <div class="grid grid-benefits">
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>One memory, many readers</h3><p>Muse Code today. Codex, Claude and Grok read the same files tomorrow. No per-agent silos. <a href="{{ agents }}">Agents</a></p></div>
+    </div>
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>Decisions with rationale</h3><p>Not just what changed, but why. Never re-decide what you already decided.</p></div>
+    </div>
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>Tacit knowledge, captured</h3><p>The “everyone knows this” that nobody ever wrote down, with its own template and tag. <a href="{{ tacit }}">Tacit knowledge</a></p></div>
+    </div>
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>Traceability</h3><p>Every entry links commits, PRs and dates. Full history, with git blame included.</p></div>
+    </div>
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>Zero lock-in</h3><p>No database, no service, no account. Plain files in git, owned by the repo.</p></div>
+    </div>
+    <div class="benefit">
+      <span class="check check-gold"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span>
+      <div><h3>Optional sync to Codicent</h3><p>The file-first core needs zero CLI. When you want it, the logbook also lives in Codicent, next to ideas and projects. <a href="{{ cli }}">CLI &amp; sync</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VERIFIED + AGENTS -->
+<section class="wrap section">
+  <div class="grid grid-2">
+    <div class="glass panel">
+      <span class="eyebrow eyebrow-gold">Verified</span>
+      <h2>Tested end to end in clean repos.</h2>
+      <ul class="checklist">
+        <li><span class="check check-green"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span><span>Installer idempotence, sh and PowerShell</span></li>
+        <li><span class="check check-green"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span><span>Fresh-agent acceptance test: the agent cites real entries with zero extra tooling</span></li>
+        <li><span class="check check-green"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span><span>Write-after-acting: a log entry and index line land in the same diff</span></li>
+        <li><span class="check check-pending"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 6v7"/><path d="M12 17.5v.5"/></svg></span><span class="pending">Codicent CLI live runs and store convergence: documented, still ahead</span></li>
+        <li><span class="check check-pending"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 6v7"/><path d="M12 17.5v.5"/></svg></span><span class="pending">Adapters beyond Muse Code: documented, not yet test-run</span></li>
+      </ul>
+      <p class="fine">This repo dogfoods its own logbook. Every claim above has an entry behind it.</p>
+    </div>
+    <div class="card panel">
+      <span class="eyebrow eyebrow-muted">Agents</span>
+      <h2>Same files, thin adapters.</h2>
+      <div class="table-scroll">
+        <table class="agents-table">
+          <thead><tr><th>Agent</th><th>Instruction file</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Muse Code</td><td><code>AGENTS.md</code> + snippet</td><td><span class="pill pill-green">Verified</span></td></tr>
+            <tr><td>Codex</td><td><code>AGENTS.md</code></td><td><span class="pill pill-muted">Roadmap</span></td></tr>
+            <tr><td>Claude Code</td><td><code>CLAUDE.md</code></td><td><span class="pill pill-muted">Roadmap</span></td></tr>
+            <tr><td>Grok Code</td><td><code>AGENTS.md</code></td><td><span class="pill pill-muted">Roadmap</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Nothing in the kit is Muse-specific: no plugin, API or MCP dependency. Any file-reading CLI works; only the instruction filename differs. <a href="{{ agents }}">Agents</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO FOR JUDGES -->
+<section class="wrap section" id="demo">
+  <div class="demo">
+    <div class="demo-copy">
+      <span class="eyebrow eyebrow-gold">For judges</span>
+      <h2>The whole thing, in five minutes.</h2>
+      <p>Start from an empty repo. End with an agent that cites real decisions, and a diff that shows it writing memory back.</p>
+      <div class="hero-actions">
+        <a class="btn btn-white" href="{{ site.hackathon_doc_url }}">Demo script</a>
+        <a class="btn btn-ghost" href="{{ site.repo_url }}">Repo on GitHub</a>
+      </div>
+    </div>
+    <ol class="demo-steps">
+      <li><span class="no">1</span><div><strong>Empty repo</strong><span>Ask the agent a project-history question. It guesses.</span></div></li>
+      <li><span class="no">2</span><div><strong>Install</strong><span>Run the installer, show the tree. Run it again to prove idempotence.</span></div></li>
+      <li><span class="no">3</span><div><strong>Teach</strong><span>Append the snippet to AGENTS.md. Commit.</span></div></li>
+      <li><span class="no">4</span><div><strong>Read</strong><span>Fresh session: “Read the repo logbook and summarize the latest decisions.” Real entries, dates and links.</span></div></li>
+      <li><span class="no">5</span><div><strong>Write</strong><span>Make a change. The agent appends a log entry and an index line in the same session. Show the diff.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="wrap vision">
+  <div class="vision-copy">
+    <span class="eyebrow eyebrow-gold">Where this goes</span>
+    <h2>The kit is step one. <span class="grad">Codicent is the memory.</span></h2>
+    <p>Repos, ideas and projects share one living memory. The logbook in your repo is the same memory, in the place developers already work. For Muse Code users, Codicent becomes a first-class member of the team: it remembers what you decided and why, and hands it to the next agent, whichever one that is.</p>
+    <a class="text-link" href="{{ site.codicent_url }}">Read the Codicent mission
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+    </a>
+  </div>
+  <ul class="vision-list">
+    <li><span class="dot dot-gold"></span><span><strong>Repos</strong> · decisions, tacit knowledge, releases</span></li>
+    <li><span class="dot dot-accent"></span><span><strong>Ideas</strong> · notes and threads before they become code</span></li>
+    <li><span class="dot dot-soft"></span><span><strong>Projects</strong> · the history every future agent can read</span></li>
+  </ul>
+</section>

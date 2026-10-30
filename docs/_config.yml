@@ -1,5 +1,38 @@
-title: Codicent memory for coding repos
-description: One file-first logbook per repo. Readable by any LLM, owned by git.
+title: Codicent Muse
+tagline: Memory for coding repos
+description: The shared memory for repos, ideas and projects. One file-first logbook per repo, plain Markdown in git, read by every agent.
 url: https://izaxon.github.io
 baseurl: /codicent-muse
-theme: minima
+lang: en
+
+repo_url: https://github.com/izaxon/codicent-muse
+hackathon_doc_url: https://github.com/izaxon/codicent-muse/blob/main/HACKATHON.md
+codicent_url: https://codicent.ai
+
+# Site navigation (header + docs sidebar), in order.
+nav:
+  - title: Quickstart
+    url: /quickstart.html
+  - title: Schema
+    url: /schema.html
+  - title: Tacit knowledge
+    url: /tacit.html
+  - title: CLI & sync
+    url: /cli.html
+  - title: Agents
+    url: /agents.html
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+exclude:
+  - _site

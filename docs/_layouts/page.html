@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<div class="docs-shell">
+  <aside class="docs-side" aria-label="Documentation">
+    <span class="eyebrow eyebrow-muted">Docs</span>
+    {% for item in site.nav %}
+    <a class="side-link{% if page.url == item.url %} is-active{% endif %}" href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{% if page.url == item.url %}<span class="dot dot-gold"></span>{% endif %}{{ item.title }}</a>
+    {% endfor %}
+    <div class="side-card">
+      <span class="eyebrow eyebrow-muted">Hackathon</span>
+      <span>Judging? The five-minute demo path is on the <a href="{{ '/#demo' | relative_url }}">front page</a>.</span>
+    </div>
+  </aside>
+
+  <main id="main" class="docs-main">
+    <article class="prose">
+      {% if page.eyebrow %}<span class="eyebrow eyebrow-gold">{{ page.eyebrow }}</span>{% endif %}
+      <h1 class="docs-title">{{ page.title }}</h1>
+      {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+      {{ content }}
+    </article>
+
+    {% assign nav_count = site.nav | size %}
+    {% for item in site.nav %}
+      {% if item.url == page.url %}
+        {% assign idx = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    <nav class="docs-pager" aria-label="Previous and next page">
+      {% if idx %}
+        {% if idx > 0 %}
+          {% assign prev_i = idx | minus: 1 %}
+          {% assign prev = site.nav[prev_i] %}
+          <a href="{{ prev.url | relative_url }}" class="pager-prev">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>
+            {{ prev.title }}
+          </a>
+        {% else %}
+          <a href="{{ '/' | relative_url }}" class="pager-prev">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>
+            Home
+          </a>
+        {% endif %}
+        {% assign next_i = idx | plus: 1 %}
+        {% if next_i < nav_count %}
+          {% assign next = site.nav[next_i] %}
+          <a href="{{ next.url | relative_url }}" class="pager-next">
+            {{ next.title }}
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+        {% endif %}
+      {% endif %}
+    </nav>
+  </main>
+</div>

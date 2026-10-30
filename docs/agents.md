@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Agents
+title: "Agents"
+eyebrow: Agents
 ---
-
-# Agents
 
 One memory, many readers. The logbook files are agent-agnostic by contract:
 plain Markdown + YAML frontmatter + the tag set in [Schema](schema.md).

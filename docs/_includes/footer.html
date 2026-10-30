@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Codicent Inside AB · Built for the Meta Global AI Developer Hackathon</span>
+    <div class="footer-links">
+      {% for item in site.nav %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+      <a href="{{ site.repo_url }}">GitHub</a>
+      <a href="{{ site.codicent_url }}">codicent.ai</a>
+    </div>
+  </div>
+</footer>
