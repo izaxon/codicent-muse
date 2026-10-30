@@ -1,0 +1,35 @@
+---
+---
+
+// Palette inspired by the Cerebral Valley hackathon page: near-black
+// canvas (#0a0a0b) with Meta-blue accent. Overrides must precede the import.
+$background-color: #0a0a0b;
+$text-color: #e8eaed;
+$brand-color: #4d9fff;
+$grey-color: #8e959e;
+$grey-color-light: #1e2126;
+$grey-color-dark: #c9cfd6;
+
+@import "minima";
+
+.site-header {
+  border-top-color: $brand-color;
+}
+
+.site-title,
+.site-title:visited {
+  color: $text-color;
+  font-weight: 600;
+}
+
+.highlight,
+pre,
+code {
+  background-color: #101216;
+  border-color: $grey-color-light;
+}
+
+::selection {
+  background: $brand-color;
+  color: $background-color;
+}
