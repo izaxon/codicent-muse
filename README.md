@@ -7,6 +7,8 @@ stuck in one AI vendor's schema.
 Built for the Meta Global AI Developer Hackathon. Muse Code first;
 Codex, Claude, and Grok Code later — all sharing the same files.
 
+**Demo video (2:15):** https://youtu.be/InMHNMl82-o · **Docs:** https://izaxon.github.io/codicent-muse/
+
 ## Adopt it in 3 steps (any repo)
 
 ```sh

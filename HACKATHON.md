@@ -17,6 +17,11 @@ templates + agent snippet + docs site. Muse Code now; Codex, Claude, and
 Grok share the same files later. Codicent becomes the common memory for
 repos, ideas, and projects — first-class for Muse Code users.
 
+## Demo video
+
+Submitted video (2:15, real runs): https://youtu.be/InMHNMl82-o.
+How it was made: `DEMO-VIDEO.md`.
+
 ## Demo script (5 minutes)
 
 1. **Empty repo.** Show a scratch repo with no memory; ask the agent a

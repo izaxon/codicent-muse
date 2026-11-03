@@ -16,3 +16,4 @@ updates this index in the same change (see `../CONTRACT.md`).
 - [2026-10-30 — Smoke3 sh pass](2026-10-30-smoke3-sh-pass.md) — #log — install.sh idempotence verified (WSL + Git sh).
 - [2026-10-30 — Docs site redesign](2026-10-30-docs-site-redesign.md) — #decision — Codicent brand, vision-first hero, own Jekyll layouts; built with the Pages image.
 - [2026-11-03 — Open source under MIT](2026-11-03-open-source-mit.md) — #decision — MIT license; repo public; stale CLI status notes corrected.
+- [2026-11-03 — Hackathon submission](2026-11-03-hackathon-submission.md) — #release — submitted with demo video, repo and docs links.
