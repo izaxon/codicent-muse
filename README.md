@@ -31,7 +31,7 @@ Full guide: the [docs site](docs/index.md) (`/docs`, GitHub Pages-ready).
 | `install.sh` / `install.ps1` | Idempotent installers (sh / Windows) |
 | `template/.codicent/CONTRACT.md` | The memory contract (spec) |
 | `template/.codicent/logbook/` | Starter logbook: index, example, templates |
-| `template/AGENTS.snippet.md` | 15-line agent instruction snippet |
+| `template/AGENTS.snippet.md` | 10-line agent instruction snippet |
 | `docs/` | GitHub Pages site (quickstart, schema, tacit, CLI, agents) |
 | `.codicent/` | This repo's own dogfooded logbook |
 | `CLI-FINDINGS.md` | CLI research: docs verified by direct fetch; live runs still ahead |

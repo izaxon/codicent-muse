@@ -32,7 +32,7 @@ entry, three templates).
 ## 2. Teach your agent
 
 Append `template/AGENTS.snippet.md` (from this kit) to your repo's
-`AGENTS.md` (or `CLAUDE.md` / equivalent). Fifteen lines: where memory
+`AGENTS.md` (or `CLAUDE.md` / equivalent). Ten lines: where memory
 lives, read-before-acting, write-after-acting.
 
 ## 3. Commit and use
