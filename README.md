@@ -34,7 +34,7 @@ Full guide: the [docs site](docs/index.md) (`/docs`, GitHub Pages-ready).
 | `template/AGENTS.snippet.md` | 15-line agent instruction snippet |
 | `docs/` | GitHub Pages site (quickstart, schema, tacit, CLI, agents) |
 | `.codicent/` | This repo's own dogfooded logbook |
-| `CLI-FINDINGS.md` | Step-1 CLI research status (partial — see file) |
+| `CLI-FINDINGS.md` | CLI research: docs verified by direct fetch; live runs still ahead |
 | `HACKATHON.md` | Hackathon summary + demo script |
 
 ## Goals
@@ -51,3 +51,7 @@ Full guide: the [docs site](docs/index.md) (`/docs`, GitHub Pages-ready).
 
 Settings → Pages → Deploy from branch → `main`, folder `/docs`.
 No build step: Jekyll-compatible Markdown with `docs/_config.yml`.
+
+## License
+
+[MIT](LICENSE) © Codicent Inside AB.

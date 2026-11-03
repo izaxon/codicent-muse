@@ -35,7 +35,8 @@ repos, ideas, and projects — first-class for Muse Code users.
 - `install.sh` / `install.ps1` — the kit.
 - `template/` — contract, starter logbook, agent snippet.
 - `docs/` — Pages site. `.codicent/` — our own dogfooded memory.
-- `CLI-FINDINGS.md` — honest status of CLI verification (pending).
+- `CLI-FINDINGS.md` — CLI verified via docs fetch; live runs still ahead.
+- `LICENSE` — MIT.
 
 ## Known gaps (judges welcome to poke)
 
